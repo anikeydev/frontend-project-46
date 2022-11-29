@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander'
+import diff from '../src/diff.js'
 
 const program = new Command()
 
@@ -13,5 +14,8 @@ program
 
 program
     .option('-f, --format <type>', 'output format')
+    .action((file1, file2) => {
+        console.log(diff(file1, file2))
+    })
 
 program.parse()
