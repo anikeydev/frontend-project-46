@@ -17,4 +17,4 @@ export const getValueFile = (path, format) => {
 }
 
 // gendiff C:\Users\Thinkpad\Desktop\Programming\Отличия\frontend-project-46\src\files\f\f1.json src/files/file2.json
-//  gendiff /home/kunzut/diff/frontend-project-46/src/files/f/f1.json src/files/file2.json --format json
+// gendiff /home/kunzut/diff/frontend-project-46/src/files/file1.json src/files/file2.json --format json
