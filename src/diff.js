@@ -1,10 +1,11 @@
 import { getValueFile } from './cli.js'
 
-const diff = (file1, file2) => {
+const diff = (file1, file2, options) => {
     const result = {}
+    const format = options.format
 
-    const obj1 = getValueFile(file1)
-    const obj2 = getValueFile(file2)
+    const obj1 = getValueFile(file1, format)
+    const obj2 = getValueFile(file2, format)
 
     const keys1 = Object.keys(obj1)
     const keys2 = Object.keys(obj2)

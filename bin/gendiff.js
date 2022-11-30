@@ -14,8 +14,8 @@ program
 
 program
     .option('-f, --format <type>', 'output format')
-    .action((file1, file2) => {
-        console.log(diff(file1, file2))
+    .action((file1, file2, options) => {
+        console.log(diff(file1, file2, options))
     })
 
 program.parse()
